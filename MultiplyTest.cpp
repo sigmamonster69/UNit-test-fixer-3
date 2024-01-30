@@ -1,11 +1,30 @@
 #include "gtest/gtest.h"
-#include "your_program_file_name.h" // Replace with the actual file name
 
-TEST(MultiplyBy10Test, PositiveInput) {
-    EXPECT_EQ(50, multiplyBy10(5));
+// The function to be tested
+int multiplyBy10(int input) {
+    return input * 10;
 }
 
+// Test case for the multiplyBy10 function
+TEST(MultiplyBy10Test, PositiveInput) {
+    // Input
+    int input = 5;
+
+    // Expected output
+    int expectedOutput = 50;
+
+    // Call the function and check the result
+    EXPECT_EQ(expectedOutput, multiplyBy10(input));
+}
+
+// Test case for the multiplyBy10 function with zero input
 TEST(MultiplyBy10Test, ZeroInput) {
-    EXPECT_EQ(0, multiplyBy10(0));
-    // Add more test cases as needed
+    // Input
+    int input = 0;
+
+    // Expected output
+    int expectedOutput = 0;
+
+    // Call the function and check the result
+    EXPECT_EQ(expectedOutput, multiplyBy10(input));
 }
