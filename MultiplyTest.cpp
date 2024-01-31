@@ -28,3 +28,9 @@ TEST(MultiplyBy10Test, ZeroInput) {
     // Call the function and check the result
     EXPECT_EQ(expectedOutput, multiplyBy10(input));
 }
+
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+}
+
