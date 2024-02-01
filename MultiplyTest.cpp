@@ -18,7 +18,13 @@ int multiplyBy10(int number) {
 
 
     // Call the function and check the result
-    EXPECT_EQ(expectedOutput, multiplyBy10(input));
+TEST(MultiplyBy10Test, SimpleMultiplication) {
+    int input = 5;
+    int expectedOutput = 50;
+
+    int result = testing::internal::GetTest() -> multiplyBy10(input);
+
+    EXPECT_EQ(expectedOutput, result);
 }
 
 int main(int argc, char **argv) {
