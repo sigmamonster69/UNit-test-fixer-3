@@ -18,14 +18,15 @@ int multiplyBy10(int number) {
 
 
     // Call the function and check the result
-TEST(MultiplyBy10Test, SimpleMultiplication) {
+TEST_F(DeathTest, MultiplyBy10) {
     int input = 5;
     int expectedOutput = 50;
 
-    int result = testing::internal::GetTest() -> multiplyBy10(input);
+    int result = multiplyBy10(input);
 
     EXPECT_EQ(expectedOutput, result);
 }
+
 
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
