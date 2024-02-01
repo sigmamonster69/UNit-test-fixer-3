@@ -2,6 +2,7 @@
 
 int main()
 {
+    std::cout << "Hello World!";
     int x;
     std::cout << "Enter a number: ";
     std::cin >> x;
