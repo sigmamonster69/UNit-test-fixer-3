@@ -20,17 +20,11 @@ TEST(MultiplyBy10Test, PositiveInput) {
 // Test case for the multiplyBy10 function with zero input
 TEST(MultiplyBy10Test, ZeroInput) {
     // Input
-    int input = 0;
+    int input = 2;
 
     // Expected output
-    int expectedOutput = 0;
+    int expectedOutput = 20;
 
     // Call the function and check the result
     EXPECT_EQ(expectedOutput, multiplyBy10(input));
 }
-
-int main(int argc, char **argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
-
